@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sp-donates</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0);
+            font-family: 'Russo One', sans-serif;
+         }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+        <h1 id="webhook-data">Default Text</h1>
+
+        <script language="javascript">
+            var ws_url = 'ws://' + window.location.host + '/ws/ticks/';
+            var ticksSocket = new WebSocket(ws_url);
+
+            ticksSocket.onmessage = function(event) {
+                var data = JSON.parse(event.data);
+                console.log('data', data);
+                // do whatever required with received data ...
+            };
+        </script>
+
+        <img src="{% static 'imgs/gif0.gif' %}">
+</body>
+</html>

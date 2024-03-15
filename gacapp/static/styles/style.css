@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@media screen and (orientation: landscape){
+body {
+  background-color: #161320;
+  vertical-align: middle;
+  font-family: 'Russo One', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: 'Russo One', sans-serif;
+    width: auto;
+    min-width: 250px;
+}
+
+.bottom_lef_img{
+    width: 35vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom_mid_img{
+    width: 0vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.log-click {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.head {
+    text-align: center;
+    margin-top: 10vh;
+}
+.head h1{
+    font-size: 5vw;
+    color: #FFFFFF;
+}
+
+.login-btn {
+    font-family: 'Russo One', sans-serif;
+    background: #302A4A;
+    color: #EFEFEF;
+    cursor: pointer;
+    font-size: 3vw;
+    padding: 0.3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    min-width: 250px;
+
+    &:hover {
+        background: #5E509E;
+        transition: all 0.5s;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px #302A4A;
+        font-size: 3.4vw;
+        color: #FFFFFF;
+    }
+}
+}
+
+@media screen and (orientation: portrait){
+body {
+  background-color: #161320;
+  vertical-align: middle;
+  font-family: 'Russo One', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: 'Russo One', sans-serif;
+    width: auto;
+    min-width: 250px;
+}
+
+.bottom_lef_img{
+    width: 0vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom_mid_img{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.log-click {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.head {
+    text-align: center;
+    margin-top: 10vh;
+}
+.head h1{
+    font-size: 15vw;
+    color: #FFFFFF;
+}
+
+.login-btn {
+    font-family: 'Russo One', sans-serif;
+    background: #302A4A;
+    color: #EFEFEF;
+    cursor: pointer;
+    font-size: 11vw;
+    padding: 3vw;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    width: auto;
+    min-width: 250px;
+
+    &:hover {
+        background: #5E509E;
+        transition: all 0.5s;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px #302A4A;
+        font-size: 13vw;
+        color: #FFFFFF;
+    }
+}
+}

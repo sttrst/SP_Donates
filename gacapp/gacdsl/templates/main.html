@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sp-donate</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="myInputText" size="100" maxlength="100" required class="input_text">
+            <input type="number" name="myInputSumm" step="1" value="1" min="0" max="1024" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

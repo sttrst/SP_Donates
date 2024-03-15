@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sp-donate</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/prof.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/mcface.css' %}">
+</head>
+
+<body>
+    <div class="prof_top">
+        <div class="in_prof_top_left">
+            <a>о нас</a>
+        </div>
+
+        <div class="in_prof_top_mid">
+            <a href="/auth/streamers">SP DONATE</a>
+        </div>
+
+        <div class="in_prof_top_right">
+            <img src="">
+            <a href="/auth/user?idl={{ dsid }}">профиль</a>
+        </div>
+    </div>
+
+    <div class="prof_cont">
+        <div class="in_prof_cont_mc">
+            <a href="https://spworlds.ru/spm/users/{{ mcname }}">{{ mcname }}</a>
+            <div class="mc-face-viewer-8x" style="background-image:url(' {{ mcskin }}');"></div>
+        </div>
+
+        <div style="margin-top: 5vw;"></div>
+
+        <div  class="in_prof_cont_mc_e">
+            <p style="text-align: center;">при регистрации произошла ошибка</p>
+        </div>
+
+        <div class="in_prof_cont_mc">
+            <p style="text-align: center;">для создания личной донат ссылки<br>просто заполните форму ниже:</p>
+        </div>
+
+        <div class="in_prof_cont_mc">
+            <form method="post" style="display: table;">
+                {% csrf_token %}
+                <p class="input_p" style="display: table-row;">выберите сервер:</p>
+                <select class="input_text_2" style="display: table-row;">
+                    <option value="SPm">СПм</option>
+                </select>
+                <p class="input_p" style="display: table-row;">номер карточки:</p>
+                <input style="display: table-row;" type="number" name="myInputSumm" class="input_text"  step="1" placeholder="00000" min="00000" max="99999" required>
+                <p class="input_p">ㅤ</p>
+                <def class="in_prof_cont_mc">
+                    <button type="submit" class="login-btn-2">регистрация</button>
+                </def>
+            </form>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sp-donate</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+    <div class="head">
+        <h1>SP DONATE</h1>
+    </div>
+
+    <a href="/auth/user">
+        <div class="log-click">
+            <button class="login-btn">Войти</button>
+        </div>
+    </a>
+
+    <img src="{% static 'imgs/sdxav.png' %}" class="bottom_lef_img">
+    <img src="{% static 'imgs/sdxavm.png' %}" class="bottom_mid_img">
+</body>
+</html>
